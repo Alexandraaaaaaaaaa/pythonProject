@@ -9,8 +9,8 @@ from src.triangle import Triangle
 def test_triangle(side_a, side_b, side_c, area, perimeter):
     t = Triangle(side_a, side_b, side_c)
     assert t.name == 'Triangle'
-    assert t.area == area
-    assert t.perimeter == perimeter
+    assert t.get_area() == area
+    assert t.get_perimeter() == perimeter
 
 
 @pytest.mark.parametrize('side_a, side_b, side_c',

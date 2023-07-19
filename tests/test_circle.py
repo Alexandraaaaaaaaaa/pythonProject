@@ -12,8 +12,8 @@ from src.figure import Figure
 def test_circle(radius, area, perimeter):
     c = Circle(radius)
     assert c.name == 'Circle'
-    assert c.area == area
-    assert c.perimeter == perimeter
+    assert c.get_area() == area
+    assert c.get_perimeter() == perimeter
 
 
 @pytest.mark.parametrize('radius',

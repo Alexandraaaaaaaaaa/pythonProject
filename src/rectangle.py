@@ -13,8 +13,9 @@ class Rectangle(Figure):
         self.length = length
         self.width = width
         self.name = 'Rectangle'
-        self.area = length * width
-        self.perimeter = (length + width) * 2
 
     def get_area(self):
-        return self.area
+        return self.length * self.width
+
+    def get_perimeter(self):
+        return (self.length + self.width) * 2

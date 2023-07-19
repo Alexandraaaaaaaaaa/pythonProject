@@ -17,9 +17,10 @@ class Triangle(Figure):
         # вычисление полупериметра треугольника
         self.semi_perimeter = (side_a + side_b + side_c) / 2
         self.name = 'Triangle'
-        self.area = (self.semi_perimeter * (self.semi_perimeter - side_a) * (self.semi_perimeter - side_b) * (
-                self.semi_perimeter - side_c)) ** 0.5
-        self.perimeter = side_a + side_b + side_c
 
     def get_area(self):
-        return self.area
+        return (self.semi_perimeter * (self.semi_perimeter - self.side_a) * (self.semi_perimeter - self.side_b) * (
+                self.semi_perimeter - self.side_c)) ** 0.5
+
+    def get_perimeter(self):
+        return self.side_a + self.side_b + self.side_c

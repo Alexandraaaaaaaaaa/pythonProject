@@ -10,8 +10,8 @@ from src.figure import Figure
 def test_square(side_a, area, perimeter):
     s = Square(side_a)
     assert s.name == 'Square'
-    assert s.area == area
-    assert s.perimeter == perimeter
+    assert s.get_area() == area
+    assert s.get_perimeter() == perimeter
 
 
 @pytest.mark.parametrize('side_a',

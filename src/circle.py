@@ -12,8 +12,9 @@ class Circle(Figure):
         self.radius = radius
         self.number_pi = 3.14
         self.name = 'Circle'
-        self.area = self.number_pi * radius * radius
-        self.perimeter = (self.number_pi * radius) * 2
 
     def get_area(self):
-        return self.area
+        return self.number_pi * self.radius * self.radius
+
+    def get_perimeter(self):
+        return (self.number_pi * self.radius) * 2

@@ -11,8 +11,8 @@ from src.rectangle import Rectangle
 def test_rectangle(length, width, area, perimeter):
     r = Rectangle(length, width)
     assert r.name == 'Rectangle'
-    assert r.area == area
-    assert r.perimeter == perimeter
+    assert r.get_area() == area
+    assert r.get_perimeter() == perimeter
 
 
 @pytest.mark.parametrize('length, width',

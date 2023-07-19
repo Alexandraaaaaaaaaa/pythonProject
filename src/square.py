@@ -10,8 +10,10 @@ class Square(Figure):
             raise TypeError('Wrong type')
 
         self.name = 'Square'
-        self.area = side_a ** 2
-        self.perimeter = side_a * 4
+        self.side_a = side_a
 
     def get_area(self):
-        return self.area
+        return self.side_a ** 2
+
+    def get_perimeter(self):
+        return self.side_a * 4
