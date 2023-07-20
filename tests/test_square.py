@@ -24,10 +24,8 @@ def test_square(side_a, area, perimeter):
 
                          ])
 def test_square_negative_type(side_a):
-    try:
+    with pytest.raises(TypeError):
         Square(side_a)
-    except TypeError:
-        assert True
 
 
 @pytest.mark.parametrize('side_a',
@@ -36,10 +34,8 @@ def test_square_negative_type(side_a):
 
                          })
 def test_square_negative_side(side_a):
-    try:
+    with pytest.raises(ValueError):
         Square(side_a)
-    except ValueError:
-        assert True
 
 
 @pytest.mark.parametrize('side_a, other_figure',
@@ -50,8 +46,6 @@ def test_square_negative_side(side_a):
                              (3, 4)
                          ])
 def test_square_negative_add_area(side_a, other_figure):
-    try:
-        circle = Square(side_a)
-        circle.add_area(other_figure)
-    except ValueError:
-        assert True
+    with pytest.raises(ValueError):
+        square = Square(side_a)
+        square.add_area(other_figure)

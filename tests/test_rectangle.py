@@ -26,10 +26,8 @@ def test_rectangle(length, width, area, perimeter):
                              (3, -2)
                          ])
 def test_rectangle_negative_zero(length, width):
-    try:
+    with pytest.raises(ValueError):
         Rectangle(length, width)
-    except ValueError:
-        assert True
 
 
 @pytest.mark.parametrize('length, width',
@@ -42,10 +40,8 @@ def test_rectangle_negative_zero(length, width):
 
                          ])
 def test_rectangle_negative_type(length, width):
-    try:
+    with pytest.raises(TypeError):
         Rectangle(length, width)
-    except TypeError:
-        assert True
 
 
 @pytest.mark.parametrize('length, width, other_figure',
@@ -56,8 +52,6 @@ def test_rectangle_negative_type(length, width):
                              (3, 4, 4)
                          ])
 def test_rectangle_negative_add_area(length, width, other_figure):
-    try:
+    with pytest.raises(ValueError):
         rectangle = Rectangle(length, width)
         rectangle.add_area(other_figure)
-    except ValueError:
-        assert True

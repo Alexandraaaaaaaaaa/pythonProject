@@ -26,10 +26,8 @@ def test_circle(radius, area, perimeter):
 
                          ])
 def test_circle_negative_type(radius):
-    try:
+    with pytest.raises(TypeError):
         Circle(radius)
-    except TypeError:
-        assert True
 
 
 @pytest.mark.parametrize('radius',
@@ -38,10 +36,8 @@ def test_circle_negative_type(radius):
 
                          })
 def test_circle_negative_radius(radius):
-    try:
+    with pytest.raises(TypeError):
         Circle(radius)
-    except TypeError:
-        assert True
 
 
 @pytest.mark.parametrize('radius, other_figure',
@@ -52,8 +48,6 @@ def test_circle_negative_radius(radius):
                              (3, 4)
                          ])
 def test_circle_negative_add_area(radius, other_figure):
-    try:
+    with pytest.raises(ValueError):
         circle = Circle(radius)
         circle.add_area(other_figure)
-    except ValueError:
-        assert True

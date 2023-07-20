@@ -11,6 +11,8 @@ def test_triangle(side_a, side_b, side_c, area, perimeter):
     assert t.name == 'Triangle'
     assert t.get_area() == area
     assert t.get_perimeter() == perimeter
+    assert t.get_area() > 0
+    assert t.get_area() > 0
 
 
 @pytest.mark.parametrize('side_a, side_b, side_c',
@@ -24,10 +26,8 @@ def test_triangle(side_a, side_b, side_c, area, perimeter):
                              (3, 3, -2)
                          ])
 def test_triangle_negative_zero(side_a, side_b, side_c):
-    try:
+    with pytest.raises(ValueError):
         Triangle(side_a, side_b, side_c)
-    except ValueError:
-        assert True
 
 
 @pytest.mark.parametrize('side_a, side_b, side_c',
@@ -40,10 +40,8 @@ def test_triangle_negative_zero(side_a, side_b, side_c):
 
                          ])
 def test_triangle_negative_type(side_a, side_b, side_c):
-    try:
+    with pytest.raises(TypeError):
         Triangle(side_a, side_b, side_c)
-    except TypeError:
-        assert True
 
 
 @pytest.mark.parametrize('side_a, side_b, side_c, other_figure',
@@ -54,8 +52,6 @@ def test_triangle_negative_type(side_a, side_b, side_c):
                              (3, 4, 1, 4)
                          ])
 def test_triangle_negative_add_area(side_a, side_b, side_c, other_figure):
-    try:
+    with pytest.raises(ValueError):
         triangle = Triangle(side_a, side_b, side_c)
         triangle.add_area(other_figure)
-    except ValueError:
-        assert True
