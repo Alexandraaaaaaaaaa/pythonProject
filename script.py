@@ -10,43 +10,26 @@ from csv import DictReader
 books = []
 
 with open(CSV_FILE_PATH, 'r', newline='') as csvfile:
-    booksJson = DictReader(csvfile)
-    for row in booksJson:
+    books_json = DictReader(csvfile)
+    for row in books_json:
         asData = json.loads(json.dumps(row))
-        book = Book()
-        book.set_title(asData['Title'])
-        book.set_author(asData['Author'])
-        book.set_pages(asData['Pages'])
-        book.set_genre(asData['Genre'])
-        books.append(json.dumps(book.__dict__))
+        book = Book(asData['Title'], asData['Author'], asData['Pages'], asData['Genre'])
+        books.append(book)
 
-persons = []
+persons = {}
 
 file = open(JSON_FILE_PATH, "r")
 users = json.loads(file.read())
 for user in users:
-    person = Person()
-    person.set_name(user["name"])
-    person.set_gender(user["gender"])
-    person.set_address(user["address"])
-    person.set_age(user["age"])
-    persons.append(person)
-
+    person = Person(user["name"], user["gender"], user["address"], user["age"])
+    persons.update({user['_id']: person.as_dict()})
 
 while len(books) > 0:
-    for person in persons:
+    for key in persons:
         if len(books) > 0:
-            person.add_book(books.pop())
-
-personsJson = []
-
-for person in persons:
-    personJson = json.dumps(person.__dict__)
-    personsJson.append(personJson)
-
-print(personsJson)
-
+            current_book = books.pop()
+            persons[key]['books'].append(current_book.as_dict())
 
 with open(JSON_RESULT_PATH, "w", ) as f:
-    s = json.dumps(personsJson, indent=4)
+    s = json.dumps(persons, indent=4)
     f.write(s)
