@@ -1,5 +1,5 @@
-{
-    "5e2696e561fdc6df60d43b5f": {
+[
+    {
         "name": "Lolita Lynn",
         "gender": "female",
         "address": "389 Neptune Avenue, Belfair, Iowa, 6116",
@@ -55,7 +55,7 @@
             }
         ]
     },
-    "5e2696e5e41b533b9c781cbb": {
+    {
         "name": "Tonia Hurst",
         "gender": "female",
         "address": "917 Terrace Place, Urbana, Idaho, 684",
@@ -111,7 +111,7 @@
             }
         ]
     },
-    "5e2696e56de4bbafd54d3587": {
+    {
         "name": "Brooks Bright",
         "gender": "male",
         "address": "901 Mermaid Avenue, Wyoming, Marshall Islands, 8506",
@@ -167,7 +167,7 @@
             }
         ]
     },
-    "5e2696e53c90e9cbfff5aa41": {
+    {
         "name": "Kathrine Sharp",
         "gender": "female",
         "address": "989 Huron Street, Talpa, Utah, 7018",
@@ -223,7 +223,7 @@
             }
         ]
     },
-    "5e2696e5ecad926b76309b06": {
+    {
         "name": "Shawn Harrell",
         "gender": "female",
         "address": "534 Hinsdale Street, Albany, Palau, 3291",
@@ -279,7 +279,7 @@
             }
         ]
     },
-    "5e2696e5334cde0ce1af76c8": {
+    {
         "name": "Amy Casey",
         "gender": "female",
         "address": "589 Townsend Street, Hiseville, Connecticut, 7082",
@@ -335,7 +335,7 @@
             }
         ]
     },
-    "5e2696e54e08309d9f5ea63b": {
+    {
         "name": "Lorena Mejia",
         "gender": "female",
         "address": "614 High Street, Blanford, Maryland, 2776",
@@ -391,7 +391,7 @@
             }
         ]
     },
-    "5e2696e55cea2cc6a4e23c98": {
+    {
         "name": "Allyson Wilkins",
         "gender": "female",
         "address": "572 Downing Street, Ivanhoe, American Samoa, 8235",
@@ -447,7 +447,7 @@
             }
         ]
     },
-    "5e2696e5075f72eb75b9f19f": {
+    {
         "name": "Mays Reed",
         "gender": "male",
         "address": "306 Georgia Avenue, Hall, New Mexico, 1402",
@@ -503,7 +503,7 @@
             }
         ]
     },
-    "5e2696e5e1e3178a031395a4": {
+    {
         "name": "Katherine Mayer",
         "gender": "female",
         "address": "640 Prescott Place, Curtice, Kansas, 3395",
@@ -559,7 +559,7 @@
             }
         ]
     },
-    "5e2696e56c1380ffbcb766a7": {
+    {
         "name": "Kelly Byers",
         "gender": "female",
         "address": "865 Revere Place, Homeland, Arizona, 232",
@@ -615,7 +615,7 @@
             }
         ]
     },
-    "5e2696e55c3307acf755d71b": {
+    {
         "name": "Schwartz Carey",
         "gender": "male",
         "address": "860 Centre Street, Hiwasse, Nevada, 2819",
@@ -671,7 +671,7 @@
             }
         ]
     },
-    "5e2696e5eee7e916099e072b": {
+    {
         "name": "Kay Beasley",
         "gender": "female",
         "address": "358 Sutton Street, Bellamy, Ohio, 8845",
@@ -727,7 +727,7 @@
             }
         ]
     },
-    "5e2696e53a0787549dc666b1": {
+    {
         "name": "Robbins Gordon",
         "gender": "male",
         "address": "610 Langham Street, Boykin, Guam, 6688",
@@ -783,7 +783,7 @@
             }
         ]
     },
-    "5e2696e5789ee072ba71b2a5": {
+    {
         "name": "Hillary Bauer",
         "gender": "female",
         "address": "951 Cumberland Street, Alleghenyville, Oregon, 7073",
@@ -839,7 +839,7 @@
             }
         ]
     },
-    "5e2696e52b8620e2cbb90c83": {
+    {
         "name": "Ruiz Phelps",
         "gender": "male",
         "address": "836 Troutman Street, Harborton, Kentucky, 4030",
@@ -889,7 +889,7 @@
             }
         ]
     },
-    "5e2696e56b574aef6b6da396": {
+    {
         "name": "Carolina Bryant",
         "gender": "female",
         "address": "377 Middagh Street, Ellerslie, Nebraska, 2644",
@@ -939,7 +939,7 @@
             }
         ]
     },
-    "5e2696e578f40fefcf216b80": {
+    {
         "name": "Sosa Lee",
         "gender": "male",
         "address": "364 Holly Street, Omar, California, 5140",
@@ -989,7 +989,7 @@
             }
         ]
     },
-    "5e2696e5e8dba3478fdbf7f9": {
+    {
         "name": "Lorna Scott",
         "gender": "female",
         "address": "878 Marconi Place, Gerton, Alabama, 845",
@@ -1039,7 +1039,7 @@
             }
         ]
     },
-    "5e2696e569c3cd480a1daead": {
+    {
         "name": "Bernard Holden",
         "gender": "male",
         "address": "674 Pine Street, Conestoga, Mississippi, 4727",
@@ -1089,7 +1089,7 @@
             }
         ]
     },
-    "5e2696e51cfb1999ffd17c67": {
+    {
         "name": "Craft Shields",
         "gender": "male",
         "address": "586 Java Street, Catherine, Arkansas, 1445",
@@ -1139,7 +1139,7 @@
             }
         ]
     },
-    "5e2696e5b9a69e99b9e1fd0c": {
+    {
         "name": "Mara English",
         "gender": "female",
         "address": "324 Herkimer Court, Boomer, Delaware, 5367",
@@ -1189,7 +1189,7 @@
             }
         ]
     },
-    "5e2696e50ae7507c7b0224f2": {
+    {
         "name": "Fisher Levy",
         "gender": "male",
         "address": "540 Adler Place, Hachita, Federated States Of Micronesia, 9894",
@@ -1239,7 +1239,7 @@
             }
         ]
     },
-    "5e2696e50618b76e973b472c": {
+    {
         "name": "Cecelia Snyder",
         "gender": "female",
         "address": "236 Anchorage Place, Odessa, Michigan, 6314",
@@ -1289,7 +1289,7 @@
             }
         ]
     },
-    "5e2696e55158d54bef1e8084": {
+    {
         "name": "Nina Kaufman",
         "gender": "female",
         "address": "538 Ashford Street, Boling, West Virginia, 7840",
@@ -1339,7 +1339,7 @@
             }
         ]
     },
-    "5e2696e5c113d7c5468253e8": {
+    {
         "name": "Dillard Branch",
         "gender": "male",
         "address": "225 Hampton Avenue, Bethany, Pennsylvania, 8056",
@@ -1389,7 +1389,7 @@
             }
         ]
     },
-    "5e2696e5ce5ce9b29c226e8a": {
+    {
         "name": "Dyer Bartlett",
         "gender": "male",
         "address": "880 Meadow Street, Seymour, Puerto Rico, 7921",
@@ -1439,7 +1439,7 @@
             }
         ]
     },
-    "5e2696e5562c047a17bc553e": {
+    {
         "name": "Tyler Dotson",
         "gender": "male",
         "address": "220 Herkimer Place, Turpin, Oklahoma, 4468",
@@ -1489,4 +1489,4 @@
             }
         ]
     }
-}
+]

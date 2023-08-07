@@ -31,5 +31,5 @@ while len(books) > 0:
             persons[key]['books'].append(current_book.as_dict())
 
 with open(JSON_RESULT_PATH, "w", ) as f:
-    s = json.dumps(persons, indent=4)
+    s = json.dumps(list(persons.values()), indent=4)
     f.write(s)

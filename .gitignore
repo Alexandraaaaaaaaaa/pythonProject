@@ -1,0 +1,6 @@
+.venv
+.pytest_cache
+main.py
+requirements.txt
+api_testing
+.idea
